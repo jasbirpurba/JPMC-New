@@ -23,7 +23,7 @@ public class ApplicationFactory {
 
     public SettlementDateCalculator getInstructionSettlementDateCalculator() {
         final WorkingDaysFactory workingDaysFactory = WorkingDaysFactory.getInstance();
-        return new SettlementDateCalculator(workingDaysFactory.getJpmcWorkingDaysInstance(),
+        return new SettlementDateCalculator(workingDaysFactory.getArabianWorkingDaysInstance(),
                 workingDaysFactory.getDefaultWorkingDaysInstance());
     }
 

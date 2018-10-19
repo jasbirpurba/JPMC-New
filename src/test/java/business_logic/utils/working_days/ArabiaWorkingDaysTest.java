@@ -14,7 +14,7 @@ public class ArabiaWorkingDaysTest {
 
     @Before
     public void setUp() throws Exception {
-        workingDays = WorkingDaysFactory.getInstance().getJpmcWorkingDaysInstance();
+        workingDays = WorkingDaysFactory.getInstance().getArabianWorkingDaysInstance();
     }
 
     @Test

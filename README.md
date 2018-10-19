@@ -1,4 +1,3 @@
-JPMC Assignment
 # Daily Trade Report Engine
 
 A daily trade report engine for incoming instructions.

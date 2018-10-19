@@ -12,12 +12,12 @@ import java.util.Set;
  */
 public class SettlementDateCalculator {
 
-    private IWorkingDays jpmcWorkingDays;
+    private IWorkingDays arabianWorkingDays;
     private IWorkingDays defaultWorkingDays;
 
     public SettlementDateCalculator(final IWorkingDays arabiaWorkingDays,
                                     final IWorkingDays defaultWorkingDays) {
-        this.jpmcWorkingDays = arabiaWorkingDays;
+        this.arabianWorkingDays = arabiaWorkingDays;
         this.defaultWorkingDays = defaultWorkingDays;
     }
 
@@ -56,7 +56,7 @@ public class SettlementDateCalculator {
         if ((currency.getCurrencyCode().equals("AED")) ||
             (currency.getCurrencyCode().equals("SAR")))
         {
-            return jpmcWorkingDays;
+            return arabianWorkingDays;
         }
         return defaultWorkingDays;
     }

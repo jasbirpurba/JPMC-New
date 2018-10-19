@@ -18,18 +18,18 @@ public class WorkingDaysFactory {
     }
 
     /**
-     * Get JPMC working days
+     * Get Arab working days
      * @return
      */
-    public WorkingDays getJpmcWorkingDaysInstance() {
+    public WorkingDays getArabianWorkingDaysInstance() {
         final ImmutableMap.Builder<DayOfWeek, Boolean> builder = ImmutableMap.builder();
         builder.put(DayOfWeek.SUNDAY, true);
         builder.put(DayOfWeek.MONDAY, true);
         builder.put(DayOfWeek.TUESDAY, true);
         builder.put(DayOfWeek.WEDNESDAY, true);
         builder.put(DayOfWeek.THURSDAY, true);
-        builder.put(DayOfWeek.FRIDAY, false); // in jpmc Friday is not working day
-        builder.put(DayOfWeek.SATURDAY, false); // in jpmc Saturday is not working days
+        builder.put(DayOfWeek.FRIDAY, false); // in Arab Friday is not working day
+        builder.put(DayOfWeek.SATURDAY, false); // in Arab Saturday is not working days
         return new WorkingDays().withWorkingDayMap(builder.build());
     }
 
