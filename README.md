@@ -48,4 +48,4 @@ The *Rank* class represents the ranking, entity and date of a record.
 The **ReportGenerator** class is responsible of generating reports, using a StringBuilder, for the aforementioned statistics.
 
 ## Demo
-In order to show its usage there is a **FakeInstructionsGenerator** class that generates a set of dummy instructions. 
+In order to show its usage there is a **CodedInputExecutor** class that generates a set of dummy instructions. 
